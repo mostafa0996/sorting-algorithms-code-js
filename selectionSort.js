@@ -11,11 +11,12 @@ where n is the number of items.
  */
 
 const selectionSort = (arr) => {  
+    const length = arr.length;
     // One by one move boundary of unsorted subarray  
-    for (let i = 0; i < arr.length - 1; i++){  
+    for (let i = 0; i < length - 1; i++){  
         // Find the minimum element in unsorted array  
         let min_idx = i;  
-        for (let j = i+1; j < arr.length; j++) {
+        for (let j = i+1; j < length; j++) {
             if (arr[j] < arr[min_idx])  
               min_idx = j;  
         } 
